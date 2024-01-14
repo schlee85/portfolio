@@ -3,7 +3,7 @@
 /* base */
 @import url('./base/_typography.css');
 @import url('./base/_reset.css');
-@import url('./base/_color.css');
+@import url('./base/_variables.css');
 
 /* utils */
 @import url('./utils/_utils.css');
@@ -15,5 +15,10 @@
 @import url('./layout/_footer.css');
 
 /* components */
+@import url('./components/_text.css');
 
 /* pages */
+@import url('./pages/_home.css');
+@import url('./pages/_about.css');
+@import url('./pages/_works.css');
+@import url('./pages/_contact.css');

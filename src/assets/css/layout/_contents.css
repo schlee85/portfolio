@@ -1,3 +1,7 @@
 .contents {
-	min-height: 30rem;
+	overflow: hidden;
+	min-height: calc(100% - var(--footer-height));
+}
+.contents .container {
+	padding-top: var(--header-height);
 }
