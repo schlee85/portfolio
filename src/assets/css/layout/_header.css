@@ -1,0 +1,17 @@
+.header {
+	display: flex;
+	align-items: center;
+	height: 4rem;
+	background: #ccc;
+}
+.header .logo {
+}
+.header .nav {
+	margin-left: auto;
+}
+.header .nav a {
+	padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+}

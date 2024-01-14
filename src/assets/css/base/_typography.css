@@ -1,0 +1,62 @@
+/* [유니코드]
+	전체 : U+0020-007E
+	특수문자 : U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E
+	영문 : U+0041-005A(대문자), U+0061-007A(소문자)
+	숫자 : U+0030-0039
+	한글 : U+AC00-U+D7A3
+*/
+/* @font-face {
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto-Regular.woff2') format('woff2'),
+		url('/fonts/Roboto-Regular.woff') format('woff'),
+		url('/fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+} */
+
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 100;
+	src: url('../../fonts/SUIT-Thin.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 200;
+	src: url('../../fonts/SUIT-ExtraLight.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 300;
+	src: url('../../fonts/SUIT-Light.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 400;
+	src: url('../../fonts/SUIT-Regular.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 500;
+	src: url('../../fonts/SUIT-Medium.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 600;
+	src: url('../../fonts/SUIT-SemiBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 700;
+	src: url('../../fonts/SUIT-Bold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 800;
+	src: url('../../fonts/SUIT-ExtraBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 900;
+	src: url('../../fonts/SUIT-Heavy.woff2') format('woff2');
+}
