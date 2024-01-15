@@ -2,6 +2,9 @@
 	overflow: hidden;
 	min-height: calc(100% - var(--footer-height));
 }
+.contents.full {
+	height: calc(100% - var(--footer-height));
+}
 .contents .container {
 	padding-top: var(--header-height);
 	padding-bottom: 10rem;

@@ -148,4 +148,5 @@ button {
 	background: transparent;
 	border: 0 none;
 	appearance: none;
+	color: inherit;
 }

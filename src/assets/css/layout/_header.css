@@ -16,7 +16,7 @@
 	margin: 0 auto;
 	padding: 0 1rem;
 	background: rgba(255, 255, 255, 0.8);
-	box-shadow: 0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0.6rem 1rem -0.6rem rgba(0, 0, 0, 0.3);
 }
 .header .logo {
 	font-size: 2rem;
@@ -50,6 +50,9 @@
 .header .nav_menu a {
 	padding: 1rem;
 	font-size: 2rem;
+}
+.header .nav_menu a.active {
+	text-decoration: underline;
 }
 .header .nav_menu a:hover {
 	text-decoration: underline;
