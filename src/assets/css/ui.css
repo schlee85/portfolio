@@ -16,6 +16,7 @@
 
 /* components */
 @import url('./components/_text.css');
+@import url('./components/_table.css');
 
 /* pages */
 @import url('./pages/_home.css');

@@ -4,4 +4,19 @@
 }
 .contents .container {
 	padding-top: var(--header-height);
+	padding-bottom: 10rem;
+	background: #eee;
+}
+br.mobile {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.contents .container {
+		padding-left: 1.2rem;
+		padding-right: 1.2rem;
+	}
+	br.mobile {
+		display: block;
+	}
 }

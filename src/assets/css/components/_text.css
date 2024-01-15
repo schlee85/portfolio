@@ -5,3 +5,9 @@
 	font-weight: 700;
 	text-align: center;
 }
+.m_txt {
+	display: block;
+	margin-top: 6rem;
+	font-size: 2rem;
+	text-align: center;
+}
