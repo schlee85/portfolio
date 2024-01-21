@@ -9,9 +9,19 @@
 	max-width: 160rem;
 	margin: 0 auto;
 	padding: var(--header-height) 5rem 10rem;
+	animation-duration: 1s;
+	animation-name: intro;
 }
 br.mobile {
 	display: none;
+}
+@keyframes intro {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 @media screen and (max-width: 768px) {
