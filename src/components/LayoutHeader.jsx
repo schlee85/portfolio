@@ -56,6 +56,7 @@ export default function LayoutHeader() {
 					</div>
 					<div className="close_button">
 						<button type="button" onClick={handleClickClose}>
+							<span className="hide">메뉴 열기</span>
 							<RiCloseFill />
 						</button>
 					</div>
