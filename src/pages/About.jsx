@@ -7,7 +7,7 @@ export default function About() {
 		<section className="container about">
 			<h2 className="m_tit">About</h2>
 			<div className="img">
-				<img src={img_profile} alt="profile" />
+				<img src={img_profile} width="200" height="200" alt="profile" />
 			</div>
 			<div className="desc">
 				<strong className="tit">
