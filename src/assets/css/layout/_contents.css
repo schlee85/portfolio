@@ -6,9 +6,9 @@
 	height: calc(100% - var(--footer-height));
 }
 .contents .container {
-	padding-top: var(--header-height);
-	padding-bottom: 10rem;
-	background: #eee;
+	max-width: 160rem;
+	margin: 0 auto;
+	padding: var(--header-height) 5rem 10rem;
 }
 br.mobile {
 	display: none;

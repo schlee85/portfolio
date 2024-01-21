@@ -1,9 +1,10 @@
 .m_tit {
 	display: block;
 	margin: 10rem 0;
-	font-size: 4rem;
-	font-weight: 700;
-	text-align: center;
+	padding-bottom: 2rem;
+	font-size: 6rem;
+	font-weight: 600;
+	border-bottom: 0.1rem solid #ddd;
 }
 .m_txt {
 	display: block;

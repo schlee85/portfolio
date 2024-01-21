@@ -17,9 +17,10 @@
 /* components */
 @import url('./components/_text.css');
 @import url('./components/_table.css');
+@import url('./components/_popup.css');
 
 /* pages */
 @import url('./pages/_home.css');
 @import url('./pages/_about.css');
-@import url('./pages/_works.css');
+@import url('./pages/_work.css');
 @import url('./pages/_contact.css');

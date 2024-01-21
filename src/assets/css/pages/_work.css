@@ -1,0 +1,68 @@
+.container.work {
+}
+.container.work .lists {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+.container.work .lists > li {
+	width: calc((100% - 6rem) / 3);
+}
+.container.work .lists > li:nth-child(3n + 2),
+.container.work .lists > li:nth-child(3n + 3) {
+	margin-left: 3rem;
+}
+.container.work .lists > li:nth-child(n + 4) {
+	margin-top: 4rem;
+}
+.container.work .lists > li a {
+	display: block;
+}
+.container.work .lists > li .tit {
+	display: block;
+	padding-bottom: 2rem;
+	font-size: 2.2rem;
+	font-weight: 500;
+}
+.container.work .lists > li .tit .sub {
+	font-size: 1.6rem;
+}
+.container.work .lists > li .img {
+	overflow: hidden;
+}
+.container.work .lists > li .img img {
+	position: relative;
+	transition: transform 0.3s;
+}
+.container.work .lists > li a:hover .img img {
+	transform: scale(1.06);
+}
+.container.work .lists > li a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1040px) {
+	.container.work .lists > li {
+		width: calc((100% - 3rem) / 2);
+	}
+	.container.work .lists > li:nth-child(n) {
+		margin: 0;
+	}
+	.container.work .lists > li:nth-child(2n + 2) {
+		margin-left: 3rem;
+	}
+	.container.work .lists > li:nth-child(n + 3) {
+		margin-top: 4rem;
+	}
+}
+@media screen and (max-width: 600px) {
+	.container.work .lists > li {
+		width: 100%;
+	}
+	.container.work .lists > li:nth-child(n) {
+		margin: 0;
+	}
+	.container.work .lists > li:nth-child(n + 2) {
+		margin-top: 4rem;
+	}
+}

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function About() {
 	return (
 		<section className="container about">
-			<h2 className="m_tit">ABOUT</h2>
+			<h2 className="m_tit">About</h2>
 			<div className="img">
 				<img src={img_profile} alt="profile" />
 			</div>

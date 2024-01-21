@@ -32,16 +32,16 @@ export default function LayoutHeader() {
 				<nav className={`nav ${isOpen ? 'open' : ''}`}>
 					<div className="nav_menu">
 						<Link to="/about" className={pathname === '/about' ? 'active' : ''}>
-							About
+							ABOUT
 						</Link>
-						<Link to="/works" className={pathname === '/works' ? 'active' : ''}>
-							Works
+						<Link to="/work" className={pathname === '/work' ? 'active' : ''}>
+							WORK
 						</Link>
 						<Link
 							to="/contact"
 							className={pathname === '/contact' ? 'active' : ''}
 						>
-							Contact
+							CONTACT
 						</Link>
 					</div>
 					<div className="nav_outlink">

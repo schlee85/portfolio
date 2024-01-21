@@ -1,22 +1,18 @@
 .header {
 	position: fixed;
 	top: 0;
-	left: 50%;
+	left: 0;
 	z-index: 10;
 	width: 100%;
-	max-width: 192rem;
-	transform: translateX(-50%);
+	backdrop-filter: blur(0.4rem);
 }
 .header .inner {
 	display: flex;
 	align-items: center;
-	position: relative;
-	width: 100%;
-	height: var(--header-height);
+	max-width: 160rem;
 	margin: 0 auto;
-	padding: 0 1rem;
-	background: rgba(255, 255, 255, 0.8);
-	box-shadow: 0 0.6rem 1rem -0.6rem rgba(0, 0, 0, 0.3);
+	padding: 0 5rem;
+	height: var(--header-height);
 }
 .header .logo {
 	font-size: 2rem;
@@ -25,7 +21,6 @@
 }
 .header .logo a {
 	display: block;
-	padding: 1rem;
 }
 .header .menu_button {
 	display: none;
@@ -49,16 +44,22 @@
 }
 .header .nav_menu a {
 	padding: 1rem;
-	font-size: 2rem;
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: #aaa;
 }
 .header .nav_menu a.active {
-	text-decoration: underline;
+	color: var(--color-black);
 }
 .header .nav_menu a:hover {
-	text-decoration: underline;
+	color: var(--color-black);
+}
+.header .nav_menu a + a {
+	margin-left: 2rem;
 }
 .header .nav_outlink {
 	min-width: 4rem;
+	margin-left: 2rem;
 	padding: 0 1rem;
 	text-align: center;
 }
