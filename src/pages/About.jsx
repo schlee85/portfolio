@@ -1,5 +1,5 @@
 import React from 'react';
-import img_profile from '../assets/images/img_profile.png';
+import img_profile from '../assets/images/img_profile.webp';
 import { Link } from 'react-router-dom';
 
 export default function About() {

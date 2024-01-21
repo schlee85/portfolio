@@ -28,7 +28,7 @@ export default function WorkCard({ id, title, year, url, alt, children }) {
 					{title} <span className="sub">({year})</span>
 				</div>
 				<div className="img">
-					<img src={url} width="480" height="300" alt={alt} />
+					<img src={url} width="480" height="300" loading="lazy" alt={alt} />
 				</div>
 			</a>
 			<Popup title={title} isVisible={visible} onClickClose={handleClickClose}>
