@@ -54,13 +54,13 @@ export default function About() {
 					</Link>
 					<br />
 					&middot; 쇼핑몰 : <br className="mobile" />
-					{/* <Link
-						to="https://stupendous-khapse-106ab1.netlify.app/"
+					<Link
+						to="https://calm-brigadeiros-6b06a1.netlify.app/"
 						target="_blank"
 						title="새창열기"
 					>
-						https://stupendous-khapse-106ab1.netlify.app/
-					</Link> */}
+						https://calm-brigadeiros-6b06a1.netlify.app/
+					</Link>
 				</p>
 			</div>
 		</section>
