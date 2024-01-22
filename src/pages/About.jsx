@@ -1,15 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import img_profile from '../assets/images/img_profile.webp';
 import { Link } from 'react-router-dom';
 
 export default function About() {
-	useEffect(() => {
-		document.body.classList.add('bg_black');
-		return () => {
-			document.body.classList.remove('bg_black');
-		};
-	}, []);
-
 	return (
 		<section className="container about">
 			<h2 className="m_tit">About</h2>
