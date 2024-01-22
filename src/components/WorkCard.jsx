@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Popup from './Popup';
 
 export default function WorkCard({ id, title, year, url, alt, children }) {
 	const [visible, setVisible] = useState(false);
+
+	const imgRef = useRef(null);
+	const [isImgLoaded, setIsImgLoaded] = useState(false);
 
 	const handleClickOpen = (e) => {
 		e.preventDefault();
@@ -14,6 +17,23 @@ export default function WorkCard({ id, title, year, url, alt, children }) {
 	};
 
 	useEffect(() => {
+		if (!imgRef.current) {
+			return;
+		}
+
+		const updateStatus = (img) => {
+			const isLoaded = img.complete && img.naturalHeight !== 0;
+			setIsImgLoaded(isLoaded);
+		};
+
+		imgRef.current.addEventListener(
+			'load',
+			() => updateStatus(imgRef.current),
+			{ once: true },
+		);
+	}, [imgRef]);
+
+	useEffect(() => {
 		if (visible) {
 			document.body.style.overflow = 'hidden';
 		} else {
@@ -23,12 +43,13 @@ export default function WorkCard({ id, title, year, url, alt, children }) {
 
 	return (
 		<>
+			{isImgLoaded && <p>done</p>}
 			<a href={id} onClick={handleClickOpen}>
 				<div className="tit">
 					{title} <span className="sub">({year})</span>
 				</div>
 				<div className="img">
-					<img src={url} width="480" height="auto" loading="lazy" alt={alt} />
+					<img src={url} width="480" height="auto" ref={imgRef} alt={alt} />
 				</div>
 			</a>
 			<Popup title={title} isVisible={visible} onClickClose={handleClickClose}>
