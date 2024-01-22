@@ -1,5 +1,6 @@
 import React from 'react';
 import WorkCard from '../components/WorkCard';
+// import Loading from '../components/Loading';
 
 import img_work_artndesign from '../assets/images/work/img_work_artndesign.png';
 import img_work_hanssem from '../assets/images/work/img_work_hanssem.png';
