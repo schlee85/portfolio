@@ -41,15 +41,19 @@ export default function WorkCard({ id, title, year, url, alt, children }) {
 		}
 	}, [visible]);
 
-	console.log(isImgLoaded);
+	useEffect(() => {
+		if (isImgLoaded) {
+			document.querySelector('.container.work .lists').style.visibility =
+				'visible';
+		} else {
+			document.querySelector('.container.work .lists').style.visibility =
+				'hidden';
+		}
+	}, [isImgLoaded]);
 
 	return (
 		<>
-			<a
-				href={id}
-				onClick={handleClickOpen}
-				style={!isImgLoaded ? { display: 'none' } : null}
-			>
+			<a href={id} onClick={handleClickOpen}>
 				<div className="tit">
 					{title} <span className="sub">({year})</span>
 				</div>
