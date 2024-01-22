@@ -28,7 +28,7 @@
 }
 .header .menu_button button {
 	padding: 0 0.4rem;
-	font-size: 3rem;
+	font-size: 2.6rem;
 }
 .header .menu_button button svg {
 	vertical-align: top;
@@ -46,11 +46,9 @@
 	padding: 1rem;
 	font-size: 1.6rem;
 	font-weight: 500;
-	color: #aaa;
+	color: var(--color-gray1);
 }
-.header .nav_menu a.active {
-	color: var(--color-black);
-}
+.header .nav_menu a.active,
 .header .nav_menu a:hover {
 	color: var(--color-black);
 }
@@ -69,8 +67,8 @@
 .header .close_button {
 	display: none;
 	position: absolute;
-	top: 2rem;
-	right: 2rem;
+	top: 1.2rem;
+	right: 2.2rem;
 }
 .header .close_button button {
 	padding: 0 0.4rem;
@@ -82,7 +80,12 @@
 	vertical-align: top;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 1040px) {
+}
+@media screen and (max-width: 600px) {
+	.header .inner {
+		padding: 0 2.4rem;
+	}
 	.header .menu_button {
 		display: block;
 	}
@@ -106,9 +109,11 @@
 	}
 	.header .nav_menu a + a {
 		margin-top: 4rem;
+		margin-left: 0;
 	}
 	.header .nav_outlink {
 		margin-top: 4rem;
+		margin-left: 0;
 	}
 	.header .close_button {
 		display: block;

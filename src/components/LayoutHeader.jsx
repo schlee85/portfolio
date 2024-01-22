@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaGithub } from 'react-icons/fa';
-import { RiMenuFoldLine, RiCloseFill } from 'react-icons/ri';
+import { IoClose } from 'react-icons/io5';
+import { FiMenu } from 'react-icons/fi';
 
 export default function LayoutHeader() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,14 @@ export default function LayoutHeader() {
 		setIsOpen(false);
 	}, [pathname]);
 
+	useEffect(() => {
+		window.addEventListener('resize', function () {
+			if (window.innerWidth > 600) {
+				setIsOpen(false);
+			}
+		});
+	}, []);
+
 	return (
 		<header className="header">
 			<div className="inner">
@@ -27,7 +36,7 @@ export default function LayoutHeader() {
 				<div className="menu_button">
 					<button type="button" onClick={handleClickOpen}>
 						<span className="hide">메뉴 열기</span>
-						<RiMenuFoldLine />
+						<FiMenu />
 					</button>
 				</div>
 				<nav className={`nav ${isOpen ? 'open' : ''}`}>
@@ -58,7 +67,7 @@ export default function LayoutHeader() {
 					<div className="close_button">
 						<button type="button" onClick={handleClickClose}>
 							<span className="hide">메뉴 닫기</span>
-							<RiCloseFill />
+							<IoClose />
 						</button>
 					</div>
 				</nav>

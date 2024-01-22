@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import img_profile from '../assets/images/img_profile.webp';
 import { Link } from 'react-router-dom';
 
 export default function About() {
+	useEffect(() => {
+		document.body.classList.add('bg_black');
+		return () => {
+			document.body.classList.remove('bg_black');
+		};
+	}, []);
+
 	return (
 		<section className="container about">
 			<h2 className="m_tit">About</h2>
@@ -16,17 +23,18 @@ export default function About() {
 				<p className="txt">
 					저는 UI 개발자입니다.
 					<br />
-					퍼블리셔에서 개발자로서 <br className="mobile" />
+					퍼블리셔이며, 개발자로서 <br className="mobile" />
 					마인드를 확장해 나가고 있습니다.
 					<br />
-					보다 나은 경험을 드리기 위해 노력하고 있습니다.
+					보다 나은 경험을 드리기 위해 노력합니다.
 				</p>
 				<p className="txt">
-					영상, 디자인을 시작으로 퍼블리싱까지 <br className="mobile" />
-					오랜 기간 업무를 해왔습니다.
+					디자인을 시작으로 퍼블리싱까지 <br className="mobile" />
+					많은 것을 배워 왔습니다.
 					<br />
-					그럼에도, UI 공부를 하다보면 매번 새롭고
-					<br className="mobile" /> 끝이 없다는 것을 느낍니다.
+					그럼에도, UI 공부를 하다보면
+					<br className="mobile" />
+					매번 새롭고 끝이 없다는 것을 느낍니다.
 					<br />
 					내일은 어떤 기술이 나올지 기대됩니다.
 				</p>
@@ -53,13 +61,13 @@ export default function About() {
 					</Link>
 					<br />
 					&middot; 쇼핑몰 : <br className="mobile" />
-					<Link
+					{/* <Link
 						to="https://stupendous-khapse-106ab1.netlify.app/"
 						target="_blank"
 						title="새창열기"
 					>
 						https://stupendous-khapse-106ab1.netlify.app/
-					</Link>
+					</Link> */}
 				</p>
 			</div>
 		</section>

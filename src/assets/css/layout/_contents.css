@@ -24,10 +24,12 @@ br.mobile {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 1040px) {
+}
+@media screen and (max-width: 600px) {
 	.contents .container {
-		padding-left: 1.2rem;
-		padding-right: 1.2rem;
+		padding-left: 2.4rem;
+		padding-right: 2.4rem;
 	}
 	br.mobile {
 		display: block;

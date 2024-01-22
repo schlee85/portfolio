@@ -65,4 +65,8 @@
 	.container.work .lists > li:nth-child(n + 2) {
 		margin-top: 4rem;
 	}
+	.container.work .lists > li .tit {
+		font-size: 1.8rem;
+		padding-bottom: 1rem;
+	}
 }

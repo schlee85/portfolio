@@ -4,4 +4,15 @@
 
 	--color-black: #000;
 	--color-white: #fff;
+	--color-gray1: #aaa;
+	--color-gray2: #666;
+	--color-gray3: #111;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1040px) {
+}
+@media screen and (max-width: 600px) {
+	:root {
+		--header-height: 6rem;
+	}
 }

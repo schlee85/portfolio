@@ -12,3 +12,12 @@
 	font-size: 2rem;
 	text-align: center;
 }
+
+@media screen and (min-width: 601px) and (max-width: 1040px) {
+}
+@media screen and (max-width: 600px) {
+	.m_tit {
+		margin: 4rem 0;
+		font-size: 4rem;
+	}
+}

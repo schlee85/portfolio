@@ -1,5 +1,18 @@
 .container.contact {
 }
+.container.contact .img {
+	position: relative;
+}
+.container.contact .img::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 2rem;
+	height: 100%;
+	background: var(--color-white);
+}
 .container.contact .callme {
 	margin-top: 10rem;
 	text-align: center;
@@ -19,4 +32,12 @@
 }
 .container.contact .callme dd + dt {
 	margin-top: 5rem;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1600px) {
+}
+@media screen and (max-width: 600px) {
+	.container.contact .img::after {
+		width: 1rem;
+	}
 }
