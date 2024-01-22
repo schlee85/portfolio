@@ -41,15 +41,27 @@ export default function WorkCard({ id, title, year, url, alt, children }) {
 		}
 	}, [visible]);
 
+	console.log(isImgLoaded);
+
 	return (
 		<>
-			{isImgLoaded && <p>done</p>}
-			<a href={id} onClick={handleClickOpen}>
+			<a
+				href={id}
+				onClick={handleClickOpen}
+				style={!isImgLoaded ? { display: 'none' } : null}
+			>
 				<div className="tit">
 					{title} <span className="sub">({year})</span>
 				</div>
 				<div className="img">
-					<img src={url} width="480" height="auto" ref={imgRef} alt={alt} />
+					<img
+						src={url}
+						width="480"
+						height="auto"
+						data-txt="1"
+						ref={imgRef}
+						alt={alt}
+					/>
 				</div>
 			</a>
 			<Popup title={title} isVisible={visible} onClickClose={handleClickClose}>
