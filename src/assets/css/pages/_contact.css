@@ -2,6 +2,15 @@
 }
 .container.contact .img {
 	position: relative;
+	overflow: hidden;
+	height: 0;
+	padding-bottom: 44.8%;
+}
+.container.contact .img img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
 .container.contact .img::after {
 	content: '';
