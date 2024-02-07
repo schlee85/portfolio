@@ -32,7 +32,6 @@
 	overflow: hidden;
 	height: 0;
 	padding-bottom: 62.5%;
-	background: var(--color-gray4);
 }
 .container.work .lists > li .img img {
 	position: absolute;
@@ -46,12 +45,6 @@
 }
 .container.work .lists > li a:hover {
 	text-decoration: underline;
-}
-.container.work .lists > li .img .loading_wrap {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 601px) and (max-width: 1040px) {

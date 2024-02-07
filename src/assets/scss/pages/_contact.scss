@@ -10,6 +10,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 0;
 	width: 100%;
 }
 .container.contact .img::after {
@@ -18,9 +19,13 @@
 	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
+	z-index: 1;
 	width: 2rem;
 	height: 100%;
 	background: var(--color-white);
+}
+.container.contact .img .loading_wrap {
+	z-index: 2;
 }
 .container.contact .callme {
 	margin-top: 10rem;

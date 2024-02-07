@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
-import Popup from './Popup';
 import Loading from './Loading';
+import Popup from './Popup';
 
 export default function WorkCard({ id, title, year, url, alt, children }) {
 	const [visible, setVisible] = useState(false);

@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { FaGithub } from 'react-icons/fa';
 import { IoClose } from 'react-icons/io5';
 import { FiMenu } from 'react-icons/fi';
+import img_logo from '../assets/images/img_logo.svg';
 
 export default function LayoutHeader() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -31,11 +32,13 @@ export default function LayoutHeader() {
 		<header className="header">
 			<div className="inner">
 				<h1 className="logo">
-					<Link to="/">DEV.SCHLEE</Link>
+					<Link to="/">
+						<img src={img_logo} height="20" alt="DEV.SCHLEE" />
+					</Link>
 				</h1>
 				<div className="menu_button">
 					<button type="button" onClick={handleClickOpen}>
-						<span className="hide">메뉴 열기</span>
+						<span className="blind">메뉴 열기</span>
 						<FiMenu />
 					</button>
 				</div>
@@ -60,13 +63,13 @@ export default function LayoutHeader() {
 							target="_blank"
 							title="새창열기"
 						>
-							<span className="hide">Github</span>
+							<span className="blind">Github</span>
 							<FaGithub />
 						</Link>
 					</div>
 					<div className="close_button">
 						<button type="button" onClick={handleClickClose}>
-							<span className="hide">메뉴 닫기</span>
+							<span className="blind">메뉴 닫기</span>
 							<IoClose />
 						</button>
 					</div>

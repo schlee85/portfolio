@@ -16,7 +16,7 @@ export default function Popup({ title, isVisible, onClickClose, children }) {
 		>
 			<div className="inner">
 				<div className="popup_head">
-					<h1>{title || 'popup title'}</h1>
+					<h1>📌 {title || 'popup title'}</h1>
 				</div>
 				<div className="popup_cont">{children}</div>
 				<button type="button" className="popup_close" onClick={onClickClose}>
