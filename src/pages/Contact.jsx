@@ -21,7 +21,7 @@ export default function Contact() {
 			<div className="img">
 				<img
 					src={img_contact}
-					alt="자주가는 동산 정상"
+					alt="자주가는 공원"
 					ref={imgNode}
 					style={{ visibility: loading ? 'hidden' : null }}
 				/>

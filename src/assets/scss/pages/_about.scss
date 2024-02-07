@@ -1,20 +1,23 @@
-.container.about {
-}
+// .container.about {
+// }
 
 .about_wrap {
 	display: flex;
 	justify-content: center;
 	.img {
-		padding: 0 6rem;
-		text-align: center;
+		position: relative;
+		overflow: hidden;
+		width: 34rem;
+		height: 34rem;
+		border-radius: 50%;
+		border: 1rem solid var(--color-gray100);
 		img {
-			width: 34rem;
-			height: 34rem;
-			border-radius: 50%;
-			border: 1rem solid var(--color-gray100);
+			width: 100%;
+			height: auto;
 		}
 	}
 	.desc {
+		margin-left: 6rem;
 		.tit {
 			display: block;
 			font-size: 2rem;

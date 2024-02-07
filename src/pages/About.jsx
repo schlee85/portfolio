@@ -1,14 +1,33 @@
-import React from 'react';
-import img_profile from '../assets/images/img_profile.webp';
+import React, { useState, useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Loading from '../components/Loading';
+import img_profile from '../assets/images/img_profile.png';
 
 export default function About() {
+	const imgNode = useRef();
+	const [loading, setLoading] = useState(true);
+
+	useLayoutEffect(() => {
+		if (!imgNode) return;
+		imgNode.current.addEventListener('load', () => {
+			setLoading(false);
+		});
+	}, []);
+
 	return (
 		<section className="container about">
 			<h2 className="m_tit">About</h2>
 			<div className="about_wrap">
 				<div className="img">
-					<img src={img_profile} width="200" height="200" alt="profile" />
+					<img
+						src={img_profile}
+						width="340"
+						height="340"
+						alt="profile"
+						ref={imgNode}
+						style={{ visibility: loading ? 'hidden' : null }}
+					/>
+					{loading && <Loading />}
 				</div>
 				<div className="desc">
 					<strong className="tit">
@@ -28,7 +47,8 @@ export default function About() {
 						이를 위해, 사용자 경험과 <br className="mobile" />
 						인터페이스에 대한 깊은 이해를 바탕으로, <br className="mobile" />
 						사용자 친화적인 웹사이트를 개발해야 합니다.
-						<br /> 뿐만 아니라, 웹 표준과 웹 접근성을 준수하여,{' '}
+						<br />
+						뿐만 아니라, 웹 표준과 웹 접근성을 준수하여,{' '}
 						<br className="mobile" />
 						모든 사용자가 웹사이트를 편리하게 <br className="mobile" />
 						사용할 수 있도록 합니다.
