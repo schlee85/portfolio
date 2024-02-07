@@ -1,6 +1,5 @@
 import React from 'react';
 import WorkCard from '../components/WorkCard';
-// import Loading from '../components/Loading';
 
 import img_work_artndesign from '../assets/images/work/img_work_artndesign.png';
 import img_work_hanssem from '../assets/images/work/img_work_hanssem.png';
@@ -33,7 +32,7 @@ export default function Works() {
 					>
 						<ul>
 							<li>기간 : 2023.03 ~ 2023.08</li>
-							<li>기업 채널 20여개 운영.</li>
+							<li>기업 채널 20여개(PC, Mobile, Tablet) 운영.</li>
 							<li>PL 역할 수행.</li>
 						</ul>
 					</WorkCard>
@@ -127,7 +126,7 @@ export default function Works() {
 					>
 						<ul>
 							<li>기간 : 2019.12 ~ 2020.09</li>
-							<li>신규 상품 및 사이트 보수 유지.</li>
+							<li>신규 상품 및 사이트 유지 보수.</li>
 							<li>마이 페이지 React 고도화 퍼블리싱 참여.</li>
 							<li>PA 역할 수행.</li>
 						</ul>

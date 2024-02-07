@@ -3,20 +3,19 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
-.loading_wrap .loading {
-	display: inline-block;
-	width: 5rem;
-	height: 5rem;
-	border: 0.4rem solid var(--color-gray100);
-	border-radius: 50%;
-	border-top-color: var(--color-gray300);
-	animation: spin 1s ease-in-out infinite;
-	-webkit-animation: spin 1s ease-in-out infinite;
+	.loading {
+		display: inline-block;
+		width: 5rem;
+		height: 5rem;
+		border: 0.4rem solid var(--color-gray100);
+		border-radius: 50%;
+		border-top-color: var(--color-gray300);
+		animation: spin 1s ease-in-out infinite;
+	}
 }
 
 @keyframes spin {
 	to {
-		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
 }
