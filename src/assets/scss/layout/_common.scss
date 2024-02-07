@@ -16,6 +16,9 @@
 	animation-duration: 1s;
 	animation-name: intro;
 }
+br.pc {
+	display: block;
+}
 br.mobile {
 	display: none;
 }
@@ -34,6 +37,9 @@ br.mobile {
 	.contents .container {
 		padding-left: 2.4rem;
 		padding-right: 2.4rem;
+	}
+	br.pc {
+		display: none;
 	}
 	br.mobile {
 		display: block;
