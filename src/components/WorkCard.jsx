@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Popup from './Popup';
+import Loading from './Loading';
 
 export default function WorkCard({ id, title, year, url, alt, children }) {
 	const [visible, setVisible] = useState(false);
+	const [loading, setLoading] = useState(true);
+	const imgNode = useRef();
 
 	const handleClickOpen = (e) => {
 		e.preventDefault();
@@ -21,6 +24,13 @@ export default function WorkCard({ id, title, year, url, alt, children }) {
 		}
 	}, [visible]);
 
+	useEffect(() => {
+		if (!imgNode) return;
+		imgNode.current.addEventListener('load', () => {
+			setLoading(false);
+		});
+	}, []);
+
 	return (
 		<>
 			<a href={id} onClick={handleClickOpen}>
@@ -28,7 +38,15 @@ export default function WorkCard({ id, title, year, url, alt, children }) {
 					{title} <span className="sub">({year})</span>
 				</div>
 				<div className="img">
-					<img src={url} width="480" height="auto" alt={alt} />
+					<img
+						src={url}
+						width="480"
+						height="auto"
+						alt={alt}
+						ref={imgNode}
+						style={{ visibility: loading ? 'hidden' : null }}
+					/>
+					{loading && <Loading />}
 				</div>
 			</a>
 			<Popup title={title} isVisible={visible} onClickClose={handleClickClose}>

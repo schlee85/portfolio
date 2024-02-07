@@ -18,6 +18,7 @@
 @import url('./components/_text.css');
 @import url('./components/_table.css');
 @import url('./components/_popup.css');
+@import url('./components/_loading.css');
 
 /* pages */
 @import url('./pages/_home.css');
