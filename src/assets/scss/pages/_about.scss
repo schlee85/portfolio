@@ -7,13 +7,13 @@
 	.img {
 		position: relative;
 		overflow: hidden;
-		width: 34rem;
-		height: 34rem;
-		border-radius: 50%;
-		border: 1rem solid var(--color-gray100);
+		max-width: 34rem;
+
 		img {
 			width: 100%;
 			height: auto;
+			border-radius: 50%;
+			border: 1rem solid var(--color-gray100);
 		}
 	}
 	.desc {
