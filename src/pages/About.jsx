@@ -88,20 +88,20 @@ export default function About() {
 					<p className="txt">
 						&middot; 유튜브 : <br className="mobile" />
 						<Link
-							to="https://schlee-ex1.netlify.app/"
+							to="https://schlee-ex-youtube.netlify.app/"
 							target="_blank"
 							title="새창열기"
 						>
-							https://schlee-ex1.netlify.app/
+							https://schlee-ex-youtube.netlify.app/
 						</Link>
 						<br />
 						&middot; 쇼핑몰 : <br className="mobile" />
 						<Link
-							to="https://schlee-ex2.netlify.app/"
+							to="https://schlee-ex-shoppy.netlify.app/"
 							target="_blank"
 							title="새창열기"
 						>
-							https://schlee-ex2.netlify.app/
+							https://schlee-ex-shoppy.netlify.app/
 						</Link>
 					</p>
 				</div>
